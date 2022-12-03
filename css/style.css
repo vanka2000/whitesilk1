@@ -1,0 +1,360 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+ a{
+  text-decoration: none;
+  color: white;
+ }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+header {
+  background: rgba(141, 122, 122, 0.63);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+
+.top_header h1 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px 0;
+}
+
+.bottom_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  padding-bottom: 5px;
+}
+
+.bottom_header .navigation,
+.bottom_header .sails {
+  border: 1px rgb(175, 108, 7) solid;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.sub_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(141, 122, 122, 0.63);
+  color: white;
+  font-size: 20px;
+  gap: 10px;
+  padding: 5px;
+  top: 115%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+.sub_menu li {
+  border: rgba(141, 122, 122, 0) 2px solid;
+  text-align: center;
+  margin-bottom: 3px;
+  list-style-type: none;
+}
+
+.sub_menu li:hover {
+  border-color: rgba(212, 158, 9, 0.774);
+}
+
+.sub_menu--active {
+  display: block;
+}
+
+main {
+  margin-top: 200px;
+}
+
+main .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1250px;
+  margin: auto;
+}
+
+main .card {
+  width: 350px;
+  height: 800px;
+  border: solid rgb(97, 94, 94) 3px;
+  background: rgb(99, 96, 96);
+}
+
+main .card .img_container {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .card .img_container img {
+  width: 344px;
+  height: 576px;
+}
+
+main h2 {
+  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+}
+
+main p {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main .about_brend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+main .slider_cont {
+  width: 600px;
+  height: 350px;
+  border: gray solid 2px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+main .divBlock {
+  min-width: 100%;
+  height: 350px;
+}
+
+.wrapper {
+  background: url(../main/img/ОбоиСайт.webp);
+  width: 100%;
+  height: auto;
+  padding: 100px 0 0;
+}
+
+.container_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.container_btn .left {
+  width: 50%;
+  height: 35px;
+  background: rgb(185, 176, 178);
+}
+
+.container_btn .right {
+  width: 50%;
+  height: 35px;
+  background: rgb(185, 176, 178);
+}
+
+.span_good {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  width: 100%;
+  height: 25px;
+}
+
+.span_good .good_contains_button {
+  background: grey;
+}
+
+.value_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.good_contains_para {
+  display: none;
+}
+
+.pvisible {
+  display: block;
+}
+
+footer {
+  width: 100%;
+  height: 150px;
+  background: rgba(141, 122, 122, 0.63);
+  position: relative;
+  bottom: 0px;
+  z-index: 9;
+}
+
+footer .footer_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 20px;
+}
+
+footer .network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+footer .network a {
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer h3 {
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.webp .wrapper{ background: url(../img/ОбоиСайт.webp); }
+.location{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.adress_a{
+  margin-top: 20px;
+  display: block;
+  font-size: 20px;
+}
